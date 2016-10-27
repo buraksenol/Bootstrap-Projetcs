@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Written and modified by Burak Şenol. Project Contains 5 or 6 different snippets.-->
+    <!--Snippet Source : http://bootsnipp.com/ -->
 	<meta charset="UTF-8">
-	 
-	<!-- If IE use the latest rendering engine -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 
-	<!-- Set the page to the width of the device and set the zoon level -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Bootstrap Tutorial</title>
+	<title>Bootstrap Template</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	 	 
 </head>
 <body>
@@ -22,17 +22,18 @@
 </style>
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Simple Template</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li> 
-      <li><a href="#">Page 3</a></li> 
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact Us</a></li>  
     </ul>
   </div>
 </nav>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="home">
 <h1>Responsive Business Template</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -41,35 +42,204 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		padding: 200px;
 	}
 </style>
+        <!--a href="#home" class="btn btn-danger btn-lg" role="button">Learn More!</a   Buton EKLENECEK-->
 </div>
-<div class="container text-center">
-	<div class="row">
+<div class="container" id="about-us">
+	<div class="row" id="bb">
+    <h1 id="details">About Us</h1>
 	<style type="text/css">
 		.row {
 			padding: 100px;
 			font-size: medium;
 		}
 	</style>
-		<div class="col-sm-4">
+		<div class="col-md-4">
+      <h1><span class="glyphicon glyphicon-envelope"></span></h1> 
       <h3>Column 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-4">
+    <h1><span class="glyphicon glyphicon-phone"></span></h1>
       <h3>Column 2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-4">
+    <h1><span class="glyphicon glyphicon-alert"></span></h1>
       <h3>Column 3</h3> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
   </div>
 
-<div class="container">
+<section id="carousel">                 
+    <div class="container" id="references">
+        <div class="row">
+        <style type="text/css">
+        .row {
+            padding: 40px;
+        }
+        </style>
+            <h1 id="details">References</h1>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+                  </ol>
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>   
+                    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>
+                    </div>
+                    <div class="active item">
+                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>
+                    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>
+                    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>
+                    </div>
+                    <div class="item">
+                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                        </blockquote>
+                    </div>
+                  </div>
+                </div>
+            </div>                          
+        </div>
+    </div>
+</section>
+
+
+
+                <div class="container text-center" id="packages">
+                    <div class="row">
+                        <h2 id="details">Choose your package</h2>
+                    </div><br>
+                    
+                     
+                       <!-- Pack 1-->
+                        <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Basic User</h2>
+                                <div class="space"></div>
+                            </div>
+                                <ul class="list-group">
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> HTML5 & CSS3</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+                                    </ul>
+                                
+                                <div class="try">
+                                    <p class="price">$ 9.99</p>
+                                    <a class="btn btn-default" href="#" type="button">Abbonati</a>
+                                </div>
+                            </div>
+                        <!-- Pack 2-->
+                        <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Premium User</h2>
+                                <div class="space"></div>
+                            </div>
+                                <ul class="list-group">
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> HTML5 & CSS3</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> PSD included</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Light and clean</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+                                    </ul>
+                                
+                                <div class="try">
+                                    <p class="price">$ 44.99</p>
+                                    <a class="btn btn-default" href="#" type="button">Abbonati</a>
+
+                                </div>
+                            </div>
+                        
+                        
+                        <!-- Pack 3-->
+                        <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Business User</h2>
+                                <div class="space"></div>
+                            </div>
+                                <ul class="list-group">
+                                    
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> HTML5 & CSS3</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> PSD included</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Light and clean</li>
+                                        <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span> Customizible HTML</li>
+                                    </ul>
+                                
+                                <div class="try">
+                                    <p class="price">$ 79.99</p>
+                                    <button class="btn btn-default" href="#" type="button">Abbonati</button></li>
+                                </div>
+                            </div>
+                        
+                        
+                        <!-- Pack 4-->
+                        <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Customize</h2>
+                                <div class="space"></div>
+                            </div>
+                                <ul class="list-group">
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Responsible design</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 3 examples</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> HTML5 & CSS3</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> PSD included</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Light and clean</li>
+                                        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Customizible HTML</li>
+                                    </ul>
+                               
+                                <div class="try">
+                                    <p class="price">$ 119.99</p>
+                                    <button class="btn btn-default" href="#" type="button">Abbonati</button></li>
+                                </div>
+                            
+                        </div> 
+                    </div>  
+
+
+<div class="container" id="contact">
     <div class="row">
-    <h1>Contact Us</h1>
+    <h1 id="details">Contact Us</h1>
         <div class="col-md-12">
             <div class="well well-sm">
                 <form>
@@ -141,19 +311,64 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
     </div>
 </div>
-<div class="container text-center" id="anan">
-    <div class="row">
-        <div class="col-lg-12">
-            <ul class="nav nav-pills nav-justified">
-                <li><a href="/">© 2013 Company Name.</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy</a></li>
-	            <li><a href="#">About us</a></li>
-	            <li><a href="#">Blog</a></li>
-	            <li><a href="#">Contact</a></li> 
-            </ul>
-        </div>
+            <!--Footer Part-->
+
+<div class="container">
+    <section style="height:80px;"></section>
+    <div class="row" style="text-align:center;">
     </div>
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="https://github.com/buraksenol">Burak Şenol</a></p></section>
+
 </div>
 
 
